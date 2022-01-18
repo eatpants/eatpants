@@ -1,4 +1,4 @@
-# eatpants
+# eatpants.github.io
 
 
 
