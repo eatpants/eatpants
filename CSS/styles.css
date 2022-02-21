@@ -1,0 +1,42 @@
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 300%;
+  color: #707070
+}
+h2{
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 200%;
+  color: #707070
+}
+h3{
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 175%;
+  color: #707070
+}
+h4{
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 150%;
+  color: #707070
+}
+
+p {
+  font-family: "Comic Sans MS",  "Comic Sans", sans-serif;
+  color: #707070
+}
+a{
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+
+}
+a:hover {
+  color:  #597A6F;
+}
+hr {
+    border: 3px dotted #597A6F;
+    border-style: none none dotted;
+    color: #fff;
+    background-color: #fff;
+}
+img{
+  border: 10px solid #ddd;
+
+}
