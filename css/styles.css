@@ -294,6 +294,9 @@ body {
   position:relative;
   top: -85px;
 }
+#imgme {
+  text-align: right;
+}
 h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 300%;
