@@ -1,8 +1,8 @@
 @media screen and (max-width: 550px) {
   .header{
-    background-color: teal;
+    text-align: center;
     display: grid;
-    grid-template-rows: 70px 70px 80px;
+
   }
   .mobileImg{
     width:75%;
@@ -55,13 +55,124 @@
     grid-row: 3;
     background-color: red;
   }
+      /*nav bar*/
+
+            details {
+              margin: 40px;
+              position: absolute; left:330px; top:10px;
+            }
+            summary {
+              writing-mode: vertical-lr;
+              text-align: center;
+              padding: 12px 10px;
+              width: 23px;
+              height: 17px;
+              background-color: #dcdcdc;
+              border: 2px solid #555555;
+              border-radius: 4px;
+              color: #555555;
+              outline: none;
+              transition: transform 200ms ease-in-out 0s;
+            }
+            summary::before,
+            summary::after {
+              position: static;
+              top: 0;
+              left: 0;
+            }
+            summary::before {
+              content: "";
+            }
+            summary::after {
+              font-family: sans-serif;
+              content: "III";
+              letter-spacing: -1px;
+            }
+            summary:hover {
+              transform: scale(1.1);
+            }
+            summary::marker {
+              font-size: 0;
+            }
+            summary::-webkit-details-marker {
+              display: none;
+            }
+            details[open] .menu {
+              animation-name: menuAnim;
+            }
+            details[open] summary::before {
+              content: "X";
+            }
+            details[open] summary::after {
+              content: "";
+            }
+            .menu {
+              height: 0;
+              width: fit-content;
+              border-radius: 4px;
+              background-color: #dcdcdc;
+              box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+              margin-top: 8px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              overflow: hidden;
+              animation: closeMenu 300ms ease-in-out forwards;
+            }
+            .menu a {
+              padding: 12px 24px;
+              margin: 0 16px;
+              color:  #555555;
+              border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+              text-decoration: none;
+              text-align: center;
+              transition: filter 200ms linear 0s;
+            }
+            .menu a:nth-of-type(1) {
+              padding-top: 24px;
+            }
+            .menu a:nth-last-of-type(1) {
+              border-bottom: none;
+            }
+            .menu a:hover {
+              filter: brightness(200%);
+            }
+            details::before {
+
+              color: #555555;
+              position: absolute;
+              margin-left: 80px;
+              padding: 10px 10px;
+              opacity: 0.4;
+            }
+            details[open]::before {
+              animation: fadeMe 300ms linear forwards;
+            }
+            @keyframes menuAnim {
+              0% {
+                height: 0;
+              }
+              100% {
+                height: 312px;
+              }
+            }
+            @keyframes fadeMe {
+              0% {
+                opacity: 0.4;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
 
 }
+
+
 @media screen and (min-width: 551px){
   .header{
     display: grid;
-    background-color: yellow;
-    grid-template-rows : 50px 50px 80px;
+    position: relative;
+    left:70px;
   }
   .wrapper{
     display: grid;
@@ -110,13 +221,79 @@
     grid-row: 2/3;
     background-color: red;
   }
+  details {
+    margin: 40px;
+    float: right;
+    position: absolute;
+     right:0px; top:10px;
+  }
+  summary {
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 12px 10px;
+    width: 23px;
+    height: 17px;
+    background-color: #dcdcdc;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    color: #555555;
+    outline: none;
 
+  }
+  summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  summary::before,
+  summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  summary::before {
+    content: "";
+  }
+  summary::after {
+    font-family: sans-serif;
+    content: "III";
+    letter-spacing: -1px;
+  }
+  summary:hover {
+    transform: scale(1.1);
+  }
+  summary::marker {
+    font-size: 0;
+  }
+  details[open] summary {
+  display: none;
+  }
 }
-picture{
-  width: 500px;
-  height: 500px;
+/* tried to center the main display image but it won't cooperate
+.pic1{
+  align-content: center;
+  object-position: center;
+}
+#objectposition1 {
+
+  object-position: 20px;
+}
+#objectposition2 {
+  object-position: 100%;
+}  */
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 20px;
 }
 
+.homeImg {
+  height:50px;
+  width: 50px;
+  display: block;
+  position:relative;
+  top: -85px;
+}
 h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 300%;
@@ -162,15 +339,14 @@ hr {
     background-color: #fff;
 }
 img{
-  border: 5px solid #ddd;
+  border: 2px solid #ddd;
 }
-span{
-  background-color: green;
-}
+
+/*
 .pic1{
   width: 50px;
   height: auto;
-}
+} */
 
 @keyframes slidein {
   from{
@@ -190,3 +366,5 @@ span{
   animation-duration: 4s;
   animation-name: slidein;
 }
+
+/*nav bar stuff*/
