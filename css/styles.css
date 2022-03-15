@@ -8,6 +8,11 @@
     width:75%;
     height: 75%;
   }
+  .photoAlbum{
+    width:30%;
+    height: 80%;
+    text-align: center;
+  }
   .wrapper{
     display: grid;
     background-color: orange;
@@ -295,7 +300,15 @@ body {
   top: -85px;
 }
 #imgme {
+  float: right;
   text-align: right;
+}
+.photoAlbum{
+  text-align: center;
+
+}
+.pic1{
+  text-align: center;
 }
 h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
@@ -320,12 +333,12 @@ h4{
 
 p {
   font-family: "Comic Sans MS",  "Comic Sans", sans-serif;
-  color: #707070
+  color: #707070;
   margin: 500px;
   /*background-color: red;*/
   padding: 10px 20px 5px 40px;
-  margin:20px 10px 10px 10px
-  width: 150px;
+  margin:20px 10px 10px 10px;
+  width: 350px;
   height: 100px;
   display: inline-block;
 }
