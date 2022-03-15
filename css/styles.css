@@ -8,6 +8,7 @@
     width:75%;
     height: 75%;
   }
+
   .photoAlbum{
     width:30%;
     height: 80%;
@@ -99,9 +100,7 @@
             summary::marker {
               font-size: 0;
             }
-            summary::-webkit-details-marker {
-              display: none;
-            }
+
             details[open] .menu {
               animation-name: menuAnim;
             }
@@ -303,6 +302,9 @@ body {
   float: right;
   text-align: right;
 }
+.contactImg{
+  text-align: right;
+}
 .photoAlbum{
   text-align: center;
 
@@ -370,7 +372,7 @@ img{
     width:300%;
   }
   50%{
-    margin-left: 40%
+    margin-left: 40%;
     width: 135%;
     }
   to{
