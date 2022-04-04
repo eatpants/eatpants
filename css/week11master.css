@@ -1,0 +1,23 @@
+p {
+font-family: 'helvetica neue', helvetiica, sans serif;
+color: red;
+font-style: italic;
+text-align: center;
+border: 2px solid blue;
+background: rgba(0, 0, 250, 0.5);
+box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+border-radius: 10px
+display: inline-block;
+cursor: pointer;
+}
+
+button{
+  transition: color 1000ms ease-in-out;
+  font-size: 50px
+}
+.is-red{
+  color: red;
+}
+.is-blue{
+  color: blue;
+}
