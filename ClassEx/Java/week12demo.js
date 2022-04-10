@@ -37,7 +37,7 @@ function updateDisplay(){
 };
 
 
-const endpoint = 'http://api.icndb.com/jokes/random'
+const endpoint = 'https://api.icndb.com/jokes/random'
 //some of these are very weird lol
 
 // const endpoint =  'https://catfact.ninja/fact'
