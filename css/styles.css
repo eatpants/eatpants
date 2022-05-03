@@ -307,6 +307,9 @@ body {
 #imgme {
   float: right;
   text-align: right;
+  margin-right: 100px;
+  position: relative;
+  top: -250px;
 }
 .contactImg{
   text-align: right;
@@ -317,6 +320,8 @@ body {
 }
 .pic1{
   text-align: center;
+  position: relative;
+  top: -110px;
 }
 h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
@@ -329,10 +334,17 @@ h2{
   color: #707070
 }
 #homeTitle{
-  position: absolute;
+  /* float: left; */
+  position: relative;
+
+  top: -105px;
   text-align: center;
-  top: 0px;
-  right: .5 * window.innerWidth;
+}
+#homeTitle2{
+  text-align: center;
+  position: relative;
+  /* width: 2000px; */
+  height: auto;
 }
 h3{
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
@@ -342,7 +354,10 @@ h3{
 h4{
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 150%;
-  color: #707070
+  color: #707070;
+}
+.hiI{
+  margin-left: 100px;
 }
 
 p {

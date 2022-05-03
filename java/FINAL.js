@@ -112,6 +112,7 @@ function sealClicked(){
     toggleSound = 0;
 
     updateDisplay();
+    document.getElementById('bark5').play();
     // f.classList.toggle('isBig');
     console.log('bark');
 }
