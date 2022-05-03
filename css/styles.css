@@ -289,6 +289,8 @@
 body {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 20px;
+  margin: 10;
+  padding: 10;
 }
 
 .homeImg {
@@ -297,6 +299,10 @@ body {
   display: block;
   position:relative;
   top: -85px;
+}
+.homeImg2{
+  height: 50px;
+  width:50px;
 }
 #imgme {
   float: right;
@@ -321,6 +327,12 @@ h2{
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 200%;
   color: #707070
+}
+#homeTitle{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: .5 * window.innerWidth;
 }
 h3{
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
@@ -357,7 +369,7 @@ hr {
     background-color: #fff;
 }
 img{
-  border: 2px solid #ddd;
+  /* border: 2px solid #ddd; */
 }
 
 /*
@@ -386,3 +398,30 @@ img{
 }
 
 /*nav bar stuff*/
+#start{
+  width: 150px;
+  height: 50px;
+  position: static;
+  left: 2px;
+  top
+}
+#seal2 {
+opacity: 0;
+left: 400px;
+}
+#seal {
+height: 80px;
+width: auto;
+}
+#counter{
+  float: right;
+  position: fixed;
+}
+.isDefault{
+  height: 80px;
+  width: "auto";
+}
+.isBig{
+  height: 400px;
+  width: "auto";
+}
